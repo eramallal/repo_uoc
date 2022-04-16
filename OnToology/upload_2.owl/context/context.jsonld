@@ -1,0 +1,144 @@
+{
+  "@context" : {
+    "Creator" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Creator"
+    },
+    "loves" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#loves",
+      "@type" : "@id"
+    },
+    "directs" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directs",
+      "@type" : "@id"
+    },
+    "age" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#age",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "hasParent" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#hasParent",
+      "@type" : "@id"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director"
+    },
+    "serieName" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#serieName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Ai" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ai"
+    },
+    "livesIn" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn",
+      "@type" : "@id"
+    },
+    "Uploaded" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Uploaded"
+    },
+    "plays" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays",
+      "@type" : "@id"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character"
+    },
+    "Chapter" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter"
+    },
+    "Player" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"
+    },
+    "TvSerie" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvSerie"
+    },
+    "Real" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Real"
+    },
+    "name" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Ludic" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ludic"
+    },
+    "surname" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "emissionDate" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#emissionDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Angel" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Angel"
+    },
+    "directedBy" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directedBy",
+      "@type" : "@id"
+    },
+    "Place" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "title" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Alive" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive"
+    },
+    "placeName" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#placeName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isPart" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPart",
+      "@type" : "@id"
+    },
+    "City" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#City"
+    },
+    "sex" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex"
+    },
+    "Countryside" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Countryside"
+    },
+    "genreType" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#genreType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "networkName" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#networkName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Virtual" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Virtual"
+    },
+    "Genre" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Genre"
+    },
+    "TvNetwork" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvNetwork"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Season"
+    },
+    "isPlayed" : {
+      "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed",
+      "@type" : "@id"
+    }
+  }
+}
