@@ -1,0 +1,924 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Season"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPart"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid19"
+    }, {
+      "@id" : "_:genid17"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid21"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#l"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Virtual"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#l"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid27"
+    }, {
+      "@id" : "_:genid25"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid29"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#hasParent"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#l"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#l"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "man"
+    }, {
+      "@value" : "woman"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid12"
+    }, {
+      "@id" : "_:genid10"
+    }, {
+      "@id" : "_:genid8"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid14"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ontology about the TV Serie 'Upload' premiered on May 1, 2020 on Amazon Prime Video"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "Eduardo Javier Ramallal Martínez"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ai",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes an Artificial Intelligence character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes a character who is alive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Angel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes a character who is an Angel for the Lake View clients"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes the chapters of the serie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes the characters in the serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes a city where a scene takes place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@language" : "en",
+    "@value" : "https://dbpedia.org/ontology/City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Real"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Countryside",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes a place in the countryside where a scene takes place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Real"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes the creator of the serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes the directors of the chapters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Genre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes the genre of a TV Serie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ludic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes a character who is part of the Ludics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes a person (a real human or a character in the serie)"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes a place where takes place a scene of a chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@language" : "en",
+    "@value" : "https://dbpedia.org/ontology/Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes an actor or an actress who plays a role in the serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Real",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes a real place (like a city, the country, the sea, ..)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes the seasons of the serie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes a TV Network"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvSerie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes a TV Serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://dbpedia.org/ontology/TelevisionShow"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Uploaded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes a character who has been uploaded to the virtual world"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Virtual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class denotes a virtual place where people is uploaded"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "First Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Age of a player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#allegra_edwards",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name" : [ {
+    "@value" : "Allegra"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname" : [ {
+    "@value" : "Edwards"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#andy_allo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "33"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name" : [ {
+    "@value" : "Andy"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname" : [ {
+    "@value" : "Allo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chapter_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directedBy" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels_director"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#emissionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2020-05-01T00:00:00"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPart" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#_1"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#title" : [ {
+    "@value" : "Welcome to Upload"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chris_williams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name" : [ {
+    "@value" : "Chris"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#dave_antony"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex" : [ {
+    "@value" : "man"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname" : [ {
+    "@value" : "Williams"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#comedy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#networkName" : [ {
+    "@value" : "Amazon Prime"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#dave_antony",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name" : [ {
+    "@value" : "Dave"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname" : [ {
+    "@value" : "Antony"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The chapter is directed by the director"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directs"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Director directs the chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#emissionDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date when the chapter was emitted"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#genreType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of a genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name" : [ {
+    "@value" : "Greg"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname" : [ {
+    "@value" : "Daniels"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Creator"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels_director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels_director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#hasParent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A character has a parent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#ingrid_kannerman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#allegra_edwards"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#loves" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nathan_brown"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name" : [ {
+    "@value" : "Ingrid"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex" : [ {
+    "@value" : "woman"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname" : [ {
+    "@value" : "Kannerman"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A chapter belongs to a determinated season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#kevin_bigley",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name" : [ {
+    "@value" : "Kevin"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#luke"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname" : [ {
+    "@value" : "Bigley"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#lake_view",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#placeName" : [ {
+    "@value" : "Lake View"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Virtual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Lake View is the luxury digital place where people with money is uploaded"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#loves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Represent a love relation between characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#luke",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#kevin_bigley"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#lake_view"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name" : [ {
+    "@value" : "Luke"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex" : [ {
+    "@value" : "man"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Uploaded"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name of a person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nathan_brown",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#robbie_amell"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name" : [ {
+    "@value" : "Nathan"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex" : [ {
+    "@value" : "man"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname" : [ {
+    "@value" : "Brown"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Uploaded"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#networkName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name of a Tv Network"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvNetwork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#new_york",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#placeName" : [ {
+    "@value" : "New York"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#City"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://dbpedia.org/resource/New_York_City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nora_antony",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#hasParent" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#dave_antony"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#andy_allo"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#new_york"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#loves" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nathan_brown"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name" : [ {
+    "@value" : "Nora"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex" : [ {
+    "@value" : "woman"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname" : [ {
+    "@value" : "Antony"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Angel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#placeName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name of a place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Player plays the role of a character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#robbie_amell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger",
+    "@value" : "33"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#lake_view"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name" : [ {
+    "@value" : "Robbie"
+  } ],
+  "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname" : [ {
+    "@value" : "Amell"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#serieName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name of a Tv Serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvSerie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Sex (genre) of a person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Surname of a person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Title of the chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/resource/New_York_City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "urn:swrl:var#c",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#l",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#s",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#x",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]

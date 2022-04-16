@@ -1,0 +1,544 @@
+@prefix : <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#> .
+
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2> rdf:type owl:Ontology ;
+                                                                 rdfs:comment "Ontology about the TV Serie 'Upload' premiered on May 1, 2020 on Amazon Prime Video" ;
+                                                                 rdfs:isDefinedBy "Eduardo Javier Ramallal Martínez"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:AnnotationProperty ;
+           rdfs:subPropertyOf rdfs:sameAs .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directedBy
+:directedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :directs ;
+            rdfs:domain :Chapter ;
+            rdfs:range :Director ;
+            rdfs:comment "The chapter is directed by the director"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directs
+:directs rdf:type owl:ObjectProperty ;
+         rdfs:domain :Director ;
+         rdfs:range :Chapter ;
+         rdfs:comment "Director directs the chapter"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#hasParent
+:hasParent rdf:type owl:ObjectProperty ;
+           rdfs:domain :Character ;
+           rdfs:range :Character ;
+           rdfs:comment "A character has a parent"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPart
+:isPart rdf:type owl:ObjectProperty ;
+        rdfs:domain :Chapter ;
+        rdfs:range [ rdf:type owl:Restriction ;
+                     owl:onProperty :isPart ;
+                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                     owl:onClass :Season
+                   ] ;
+        rdfs:comment "A chapter belongs to a determinated season"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed
+:isPlayed rdf:type owl:ObjectProperty ;
+          owl:inverseOf :plays ;
+          rdfs:domain [ rdf:type owl:Restriction ;
+                        owl:onProperty :isPlayed ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Player
+                      ] ;
+          rdfs:range :Player .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn
+:livesIn rdf:type owl:ObjectProperty ;
+         rdfs:domain :Character ;
+         rdfs:range :Place .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#loves
+:loves rdf:type owl:ObjectProperty ,
+                owl:SymmetricProperty ;
+       rdfs:domain :Character ;
+       rdfs:range :Character ;
+       rdfs:comment "Represent a love relation between characters"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays
+:plays rdf:type owl:ObjectProperty ;
+       rdfs:domain :Player ;
+       rdfs:range :Character ;
+       rdfs:comment "Player plays the role of a character"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#age
+:age rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Player ;
+     rdfs:range xsd:positiveInteger ;
+     rdfs:comment "Age of a player"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#emissionDate
+:emissionDate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Chapter ;
+              rdfs:range xsd:dateTime ;
+              rdfs:comment "Date when the chapter was emitted"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#genreType
+:genreType rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Genre ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Type of a genre"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Person ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Name of a person"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#networkName
+:networkName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :TvNetwork ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Name of a Tv Network"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#placeName
+:placeName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Place ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Name of a place"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#serieName
+:serieName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :TvSerie ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Name of a Tv Serie"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex
+:sex rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Person ;
+     rdfs:range [ rdf:type rdfs:Datatype ;
+                  owl:oneOf [ rdf:type rdf:List ;
+                              rdf:first "man" ;
+                              rdf:rest [ rdf:type rdf:List ;
+                                         rdf:first "woman" ;
+                                         rdf:rest rdf:nil
+                                       ]
+                            ]
+                ] ;
+     rdfs:comment "Sex (genre) of a person"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname
+:surname rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Person ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Surname of a person"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Chapter ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Title of the chapter"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ai
+:Ai rdf:type owl:Class ;
+    rdfs:subClassOf :Character ;
+    rdfs:comment "This class denotes an Artificial Intelligence character"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive
+:Alive rdf:type owl:Class ;
+       rdfs:subClassOf :Character ;
+       rdfs:comment "This class denotes a character who is alive"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Angel
+:Angel rdf:type owl:Class ;
+       rdfs:subClassOf :Alive ;
+       rdfs:comment "This class denotes a character who is an Angel for the Lake View clients"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter
+:Chapter rdf:type owl:Class ;
+         rdfs:comment "This class denotes the chapters of the serie"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf :Person ;
+           rdfs:comment "This class denotes the characters in the serie"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf :Real ;
+      rdfs:comment "This class denotes a city where a scene takes place"@en ;
+      rdfs:sameAs "https://dbpedia.org/ontology/City"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Countryside
+:Countryside rdf:type owl:Class ;
+             rdfs:subClassOf :Real ;
+             rdfs:comment "This class denotes a place in the countryside where a scene takes place"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Creator
+:Creator rdf:type owl:Class ;
+         rdfs:subClassOf :Person ;
+         rdfs:comment "This class denotes the creator of the serie"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :Person ;
+          rdfs:comment "This class denotes the directors of the chapters"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Genre
+:Genre rdf:type owl:Class ;
+       rdfs:comment "This class denotes the genre of a TV Serie"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ludic
+:Ludic rdf:type owl:Class ;
+       rdfs:subClassOf :Alive ;
+       rdfs:comment "This class denotes a character who is part of the Ludics"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person
+:Person rdf:type owl:Class ;
+        owl:disjointWith :Place ;
+        rdfs:comment "This class denotes a person (a real human or a character in the serie)"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place
+:Place rdf:type owl:Class ;
+       rdfs:comment "This class denotes a place where takes place a scene of a chapter"@en ;
+       rdfs:sameAs "https://dbpedia.org/ontology/Place"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player
+:Player rdf:type owl:Class ;
+        rdfs:subClassOf :Person ;
+        rdfs:comment "This class denotes an actor or an actress who plays a role in the serie"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Real
+:Real rdf:type owl:Class ;
+      rdfs:subClassOf :Place ;
+      rdfs:comment "This class denotes a real place (like a city, the country, the sea, ..)"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Season
+:Season rdf:type owl:Class ;
+        rdfs:comment "This class denotes the seasons of the serie"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvNetwork
+:TvNetwork rdf:type owl:Class ;
+           rdfs:comment "This class denotes a TV Network"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvSerie
+:TvSerie rdf:type owl:Class ;
+         rdfs:comment "This class denotes a TV Serie"@en ;
+         rdfs:sameAs "http://dbpedia.org/ontology/TelevisionShow"^^xsd:anyURI .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Uploaded
+:Uploaded rdf:type owl:Class ;
+          rdfs:subClassOf :Character ;
+          rdfs:comment "This class denotes a character who has been uploaded to the virtual world"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Virtual
+:Virtual rdf:type owl:Class ;
+         rdfs:subClassOf :Place ;
+         rdfs:comment "This class denotes a virtual place where people is uploaded"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#_1
+:_1 rdf:type owl:NamedIndividual ,
+             :Season ;
+    rdfs:comment "First Season"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#allegra_edwards
+:allegra_edwards rdf:type owl:NamedIndividual ,
+                          :Player ;
+                 :name "Allegra" ;
+                 :surname "Edwards" .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#andy_allo
+:andy_allo rdf:type owl:NamedIndividual ,
+                    :Player ;
+           :age "33"^^xsd:positiveInteger ;
+           :name "Andy" ;
+           :surname "Allo" .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chapter_1
+:chapter_1 rdf:type owl:NamedIndividual ,
+                    :Chapter ;
+           :directedBy :greg_daniels_director ;
+           :isPart :_1 ;
+           :emissionDate "2020-05-01T00:00:00"^^xsd:dateTime ;
+           :title "Welcome to Upload" .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chris_williams
+:chris_williams rdf:type owl:NamedIndividual ,
+                         :Player ;
+                :plays :dave_antony ;
+                :name "Chris" ;
+                :sex "man" ;
+                :surname "Williams" .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#comedy
+:comedy rdf:type owl:NamedIndividual ,
+                 :Genre ;
+        :networkName "Amazon Prime" .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#dave_antony
+:dave_antony rdf:type owl:NamedIndividual ,
+                      :Alive ;
+             :name "Dave" ;
+             :surname "Antony" .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels
+:greg_daniels rdf:type owl:NamedIndividual ,
+                       :Creator ;
+              owl:sameAs :greg_daniels_director ;
+              :name "Greg" ;
+              :surname "Daniels" .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels_director
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels_director
+:greg_daniels_director rdf:type owl:NamedIndividual ,
+                                :Director .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#ingrid_kannerman
+:ingrid_kannerman rdf:type owl:NamedIndividual ,
+                           :Alive ;
+                  :isPlayed :allegra_edwards ;
+                  :loves :nathan_brown ;
+                  :name "Ingrid" ;
+                  :sex "woman" ;
+                  :surname "Kannerman" .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#kevin_bigley
+:kevin_bigley rdf:type owl:NamedIndividual ,
+                       :Player ;
+              :plays :luke ;
+              :name "Kevin" ;
+              :surname "Bigley" .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#lake_view
+:lake_view rdf:type owl:NamedIndividual ,
+                    :Virtual ;
+           :placeName "Lake View" ;
+           rdfs:comment "Lake View is the luxury digital place where people with money is uploaded"@en .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#luke
+:luke rdf:type owl:NamedIndividual ,
+               :Uploaded ;
+      :isPlayed :kevin_bigley ;
+      :livesIn :lake_view ;
+      :name "Luke" ;
+      :sex "man" .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nathan_brown
+:nathan_brown rdf:type owl:NamedIndividual ,
+                       :Uploaded ;
+              :isPlayed :robbie_amell ;
+              :name "Nathan" ;
+              :sex "man" ;
+              :surname "Brown" .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#new_york
+:new_york rdf:type owl:NamedIndividual ,
+                   :City ;
+          owl:sameAs <https://dbpedia.org/resource/New_York_City> ;
+          :placeName "New York" .
+
+
+###  https://dbpedia.org/resource/New_York_City
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nora_antony
+:nora_antony rdf:type owl:NamedIndividual ,
+                      :Angel ;
+             :hasParent :dave_antony ;
+             :isPlayed :andy_allo ;
+             :livesIn :new_york ;
+             :loves :nathan_brown ;
+             :name "Nora" ;
+             :sex "woman" ;
+             :surname "Antony" .
+
+
+###  http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#robbie_amell
+:robbie_amell rdf:type owl:NamedIndividual ,
+                       :Player ;
+              :livesIn :lake_view ;
+              :age "33"^^xsd:positiveInteger ;
+              :name "Robbie" ;
+              :surname "Amell" .
+
+
+###  https://dbpedia.org/resource/New_York_City
+<https://dbpedia.org/resource/New_York_City> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#x> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#l> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :livesIn ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#l>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Virtual ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#l>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> [ rdf:type owl:Class ;
+                                                                                                         owl:complementOf :Alive
+                                                                                                       ] ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :livesIn ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#l>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasParent ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :livesIn ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#l>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Character ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :sex ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :plays ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :sex ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

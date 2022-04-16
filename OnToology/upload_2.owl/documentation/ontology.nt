@@ -1,0 +1,496 @@
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology about the TV Serie 'Upload' premiered on May 1, 2020 on Amazon Prime Video" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Eduardo Javier Ramallal Martínez"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#sameAs
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#sameAs> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directedBy
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directs> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The chapter is directed by the director"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directs
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directs> <http://www.w3.org/2000/01/rdf-schema#comment> "Director directs the chapter"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#hasParent
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#hasParent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#hasParent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#hasParent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#hasParent> <http://www.w3.org/2000/01/rdf-schema#comment> "A character has a parent"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPart
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPart> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Season> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPart> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPart> <http://www.w3.org/2000/01/rdf-schema#comment> "A chapter belongs to a determinated season"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player> .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place> .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#loves
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#loves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#loves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#loves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#loves> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#loves> <http://www.w3.org/2000/01/rdf-schema#comment> "Represent a love relation between characters"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays> <http://www.w3.org/2000/01/rdf-schema#comment> "Player plays the role of a character"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#age
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#age> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#age> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#age> <http://www.w3.org/2000/01/rdf-schema#comment> "Age of a player"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#emissionDate
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#emissionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#emissionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#emissionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#emissionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the chapter was emitted"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#genreType
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#genreType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#genreType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Genre> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#genreType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#genreType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of a genre"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a person"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#networkName
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#networkName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#networkName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvNetwork> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#networkName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#networkName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a Tv Network"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#placeName
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#placeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#placeName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#placeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#placeName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a place"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#serieName
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#serieName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#serieName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvSerie> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#serieName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#serieName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a Tv Serie"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex> <http://www.w3.org/2000/01/rdf-schema#range> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#oneOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "woman" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "man" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex> <http://www.w3.org/2000/01/rdf-schema#comment> "Sex (genre) of a person"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> <http://www.w3.org/2000/01/rdf-schema#comment> "Surname of a person"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#title
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#title> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of the chapter"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ai
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ai> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ai> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ai> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes an Artificial Intelligence character"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes a character who is alive"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Angel
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Angel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Angel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Angel> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes a character who is an Angel for the Lake View clients"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes the chapters of the serie"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes the characters in the serie"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#City
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Real> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#City> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes a city where a scene takes place"@en .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#City> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/City"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Countryside
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Countryside> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Countryside> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Real> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Countryside> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes a place in the countryside where a scene takes place"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Creator
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Creator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Creator> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes the creator of the serie"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes the directors of the chapters"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Genre
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Genre> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes the genre of a TV Serie"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ludic
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ludic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ludic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Ludic> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes a character who is part of the Ludics"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes a person (a real human or a character in the serie)"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes a place where takes place a scene of a chapter"@en .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Place"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes an actor or an actress who plays a role in the serie"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Real
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Real> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Real> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Real> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes a real place (like a city, the country, the sea, ..)"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Season
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Season> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes the seasons of the serie"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvNetwork
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes a TV Network"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvSerie
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvSerie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvSerie> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes a TV Serie"@en .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#TvSerie> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/ontology/TelevisionShow"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Uploaded
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Uploaded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Uploaded> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Uploaded> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes a character who has been uploaded to the virtual world"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Virtual
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Virtual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Virtual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Virtual> <http://www.w3.org/2000/01/rdf-schema#comment> "This class denotes a virtual place where people is uploaded"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#_1
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Season> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#_1> <http://www.w3.org/2000/01/rdf-schema#comment> "First Season"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#allegra_edwards
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#allegra_edwards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#allegra_edwards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#allegra_edwards> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> "Allegra" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#allegra_edwards> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> "Edwards" .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#andy_allo
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#andy_allo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#andy_allo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#andy_allo> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#age> "33"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#andy_allo> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> "Andy" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#andy_allo> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> "Allo" .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chapter_1
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chapter_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chapter_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Chapter> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chapter_1> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#directedBy> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels_director> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chapter_1> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPart> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#_1> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chapter_1> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#emissionDate> "2020-05-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chapter_1> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#title> "Welcome to Upload" .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chris_williams
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chris_williams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chris_williams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chris_williams> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#dave_antony> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chris_williams> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> "Chris" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chris_williams> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex> "man" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#chris_williams> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> "Williams" .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#comedy
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#comedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#comedy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Genre> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#comedy> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#networkName> "Amazon Prime" .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#dave_antony
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#dave_antony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#dave_antony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#dave_antony> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> "Dave" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#dave_antony> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> "Antony" .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Creator> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels> <http://www.w3.org/2002/07/owl#sameAs> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels_director> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> "Greg" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> "Daniels" .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels_director
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels_director
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels_director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels_director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director> .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#ingrid_kannerman
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#ingrid_kannerman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#ingrid_kannerman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#ingrid_kannerman> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#allegra_edwards> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#ingrid_kannerman> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#loves> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nathan_brown> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#ingrid_kannerman> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> "Ingrid" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#ingrid_kannerman> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex> "woman" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#ingrid_kannerman> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> "Kannerman" .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#kevin_bigley
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#kevin_bigley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#kevin_bigley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#kevin_bigley> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#luke> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#kevin_bigley> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> "Kevin" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#kevin_bigley> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> "Bigley" .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#lake_view
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#lake_view> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#lake_view> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Virtual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#lake_view> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#placeName> "Lake View" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#lake_view> <http://www.w3.org/2000/01/rdf-schema#comment> "Lake View is the luxury digital place where people with money is uploaded"@en .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#luke
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#luke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#luke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Uploaded> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#luke> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#kevin_bigley> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#luke> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#lake_view> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#luke> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> "Luke" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#luke> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex> "man" .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nathan_brown
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nathan_brown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nathan_brown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Uploaded> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nathan_brown> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#robbie_amell> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nathan_brown> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> "Nathan" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nathan_brown> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex> "man" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nathan_brown> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> "Brown" .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#new_york
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#new_york> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#new_york> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#City> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#new_york> <http://www.w3.org/2002/07/owl#sameAs> <https://dbpedia.org/resource/New_York_City> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#new_york> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#placeName> "New York" .
+# 
+# https://dbpedia.org/resource/New_York_City
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nora_antony
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nora_antony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nora_antony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Angel> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nora_antony> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#hasParent> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#dave_antony> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nora_antony> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#isPlayed> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#andy_allo> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nora_antony> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#new_york> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nora_antony> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#loves> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nathan_brown> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nora_antony> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> "Nora" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nora_antony> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex> "woman" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#nora_antony> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> "Antony" .
+# 
+# http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#robbie_amell
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#robbie_amell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#robbie_amell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#robbie_amell> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#lake_view> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#robbie_amell> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#age> "33"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#robbie_amell> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name> "Robbie" .
+<http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#robbie_amell> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname> "Amell" .
+# 
+# https://dbpedia.org/resource/New_York_City
+<https://dbpedia.org/resource/New_York_City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#x> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#l> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid15 <http://www.w3.org/2003/11/swrl#body> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#l> .
+_:genid17 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Virtual> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#l> .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid19 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid15 <http://www.w3.org/2003/11/swrl#head> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid21 <http://www.w3.org/2003/11/swrl#classPredicate> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#complementOf> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Alive> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid23 <http://www.w3.org/2003/11/swrl#body> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid25 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#hasParent> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#l> .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid27 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/2003/11/swrl#head> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#l> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#livesIn> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid6 <http://www.w3.org/2003/11/swrl#body> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
+_:genid8 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid8 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#plays> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid10 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#x> .
+_:genid12 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid6 <http://www.w3.org/2003/11/swrl#head> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid14 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
