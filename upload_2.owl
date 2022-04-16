@@ -543,6 +543,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#drama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#drama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Genre"/>
+        <genreType>Drama</genreType>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#greg_daniels">
