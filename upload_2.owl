@@ -10,7 +10,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2">
         <rdfs:comment>Ontology about the TV Serie &apos;Upload&apos; premiered on May 1, 2020 on Amazon Prime Video</rdfs:comment>
-        <rdfs:isDefinedBy xml:lang="en">Eduardo Javier Ramallal Martínez</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Eduardo Ramallal Martínez</rdfs:label>
     </owl:Ontology>
     
 
@@ -188,7 +188,6 @@
     <!-- http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#name">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Name of a person</rdfs:comment>
     </owl:DatatypeProperty>
@@ -228,7 +227,6 @@
     <!-- http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#sex">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -254,7 +252,6 @@
     <!-- http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#surname">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Surname of a person</rdfs:comment>
     </owl:DatatypeProperty>
@@ -320,7 +317,6 @@
     <!-- http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Character">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"/>
         <rdfs:comment xml:lang="en">This class denotes the characters in the serie</rdfs:comment>
     </owl:Class>
     
@@ -348,7 +344,6 @@
     <!-- http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Creator -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Creator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"/>
         <rdfs:comment xml:lang="en">This class denotes the creator of the serie</rdfs:comment>
     </owl:Class>
     
@@ -357,7 +352,6 @@
     <!-- http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Director">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"/>
         <rdfs:comment xml:lang="en">This class denotes the directors of the chapters</rdfs:comment>
     </owl:Class>
     
@@ -380,15 +374,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person">
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place"/>
-        <rdfs:comment xml:lang="en">This class denotes a person (a real human or a character in the serie)</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Place">
@@ -401,7 +386,6 @@
     <!-- http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Player">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edu-uoc/ontologies/2022/3/upload_2#Person"/>
         <rdfs:comment xml:lang="en">This class denotes an actor or an actress who plays a role in the serie</rdfs:comment>
     </owl:Class>
     
